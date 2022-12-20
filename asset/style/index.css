@@ -1,0 +1,391 @@
+@font-face {
+  font-family: "font-1";
+  src: url(../font/Inter-ExtraBold.ttf);
+}
+@font-face {
+  font-family: "font-2";
+  src: url(../font/Merriweather-Light.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background: url(../img/bg.jpg) fixed no-repeat center/cover;
+  height: 3300px;
+}
+
+button {
+  padding: 10px 25px;
+  border: 2px solid black;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+button:hover {
+  cursor: pointer;
+}
+
+.date {
+  font-family: "font-2";
+}
+
+p {
+  line-height: 30px;
+  width: 60%;
+  margin: 15px auto;
+}
+
+h4 {
+  font-size: 1.5rem;
+  width: 50%;
+  margin: 0 auto;
+}
+
+header {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  margin: 0 auto;
+  color: white;
+  padding: 100px;
+}
+header h1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 90%;
+  font: 700 3rem "font-1", sans-serif;
+  text-transform: uppercase;
+  margin: 30px auto;
+}
+header p {
+  margin: 30px aoto;
+}
+header i {
+  border: 1px solid white;
+  border-radius: 45px;
+  padding: 15px 17px;
+}
+@media screen and (max-width: 1000px) {
+  header header {
+    width: 90%;
+  }
+}
+
+nav {
+  background: hwb(0 73% 27%/0.568);
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: white;
+  margin: 0 auto;
+}
+nav .nav-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+nav .nav-left h2 {
+  font-size: 0.7rem;
+  padding: 0 10px;
+  text-transform: uppercase;
+}
+nav .nav-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+nav .nav-right a {
+  color: white;
+}
+nav .nav-right i {
+  margin: 20px;
+  font-size: 1.5rem;
+}
+nav .nav-left div,
+nav .nav-right div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+nav .nav-left div:hover,
+nav .nav-left div a:hover,
+nav .nav-right div:hover,
+nav .nav-right div a:hover {
+  background: #cecece;
+  color: black;
+  cursor: pointer;
+}
+@media screen and (max-width: 1000px) {
+  nav .nav-left {
+    height: 80px;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    margin: 0 auto;
+  }
+  nav .nav-left div {
+    text-align: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+  }
+  nav .nav-left div h2 {
+    width: 50%;
+  }
+  nav .nav-right {
+    display: none;
+  }
+}
+
+.intro {
+  background: #eeebeb;
+  text-align: center;
+  margin: 0 auto;
+  width: 80%;
+}
+.intro .intro-head {
+  padding: 10px;
+}
+.intro .intro-head .date {
+  position: relative;
+  padding: 40px;
+}
+.intro .intro-head .date::before {
+  content: "";
+  position: absolute;
+  background: rgba(180, 180, 180, 0.5882352941);
+  height: 1px;
+  width: 30%;
+  top: 50%;
+  left: 10px;
+}
+.intro .intro-head .date::after {
+  content: "";
+  position: absolute;
+  background: rgba(180, 180, 180, 0.5882352941);
+  height: 1px;
+  width: 30%;
+  top: 50%;
+  right: 10px;
+}
+.intro .intro-head h2 {
+  font: 3rem "font-1";
+  text-transform: uppercase;
+  width: 60%;
+  margin: 15px auto;
+}
+.intro .intro-head .intro-img {
+  height: 450px;
+  width: 100%;
+  margin: 50px 0;
+}
+@media screen and (max-width: 1000px) {
+  .intro .intro-head .intro-img .intro .intro-head .intro-img img {
+    height: 50%;
+  }
+  .intro .intro-head .intro-img img {
+    width: 50%;
+    height: 50px;
+  }
+}
+.intro .intro-head .intro-img img {
+  height: 100%;
+}
+.intro .intro-head button {
+  margin-bottom: 75px;
+}
+@media screen and (max-width: 1000px) {
+  .intro .intro-head .date {
+    position: relative;
+  }
+  .intro .intro-head .date::before {
+    position: absolute;
+    content: "";
+    background: rgba(180, 180, 180, 0.5882352941);
+    width: 30%;
+    height: 1px;
+    top: 50%;
+    left: -15px;
+  }
+  .intro .intro-head .date::after {
+    position: absolute;
+    content: "";
+    background: rgba(180, 180, 180, 0.5882352941);
+    width: 30%;
+    height: 1px;
+    top: 50%;
+    right: -15px;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .intro-body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .intro-body .intro-body {
+    display: block;
+  }
+  .intro-body .intro-body-left,
+.intro-body .intro-body-right {
+    padding: 50px;
+    border: 1px solid rgba(128, 128, 128, 0.171);
+    height: 225px;
+    width: 50%;
+  }
+  .intro-body .intro-body-left p,
+.intro-body .intro-body-right p {
+    text-align: left;
+    width: 100%;
+    font-size: 0.8rem;
+    margin: 25px 0;
+  }
+  .intro-body .intro-body-left .date,
+.intro-body .intro-body-right .date {
+    text-align: center;
+  }
+  .intro-body .intro-body-left,
+.intro-body .intro-body-right {
+    height: 750px;
+  }
+  .intro-body .intro-body-left img,
+.intro-body .intro-body-right img {
+    width: 99%;
+  }
+}
+@media screen and (min-width: 700px) and (max-width: 700px) {
+  .intro-body .intro-body-left img,
+.intro-body .intro-body-right img {
+    display: block;
+  }
+  .intro-body .intro-body-left img .introp-body-left img,
+.intro-body .intro-body-left img .introp-body-right img,
+.intro-body .intro-body-right img .introp-body-left img,
+.intro-body .intro-body-right img .introp-body-right img {
+    height: 150px;
+    width: auto;
+  }
+}
+
+footer {
+  height: 800px;
+  position: relative;
+  background: whitesmoke;
+  width: 80%;
+  margin: 20px auto;
+}
+footer .footer {
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+footer .form {
+  height: 85%;
+  padding: 15px;
+}
+footer .form form {
+  padding: 10px;
+  display: grid;
+  grid-template-rows: 10% 10% 10% 10% 10% 50%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+footer .form form input {
+  border: 1px solid rgba(179, 179, 179, 0.5490196078);
+  padding: 10px 0;
+  border-radius: 5px;
+  background: transparent;
+}
+footer .form form textarea {
+  border: 1px solid rgba(179, 179, 179, 0.5490196078);
+  resize: none;
+  height: 80%;
+  background: transparent;
+}
+footer .form .button {
+  position: absolute;
+  bottom: 75px;
+  left: 25px;
+}
+footer .form .button button {
+  border: 1px solid #3d3d3d;
+  color: hsla(0deg, 0%, 24%, 0.822);
+}
+footer .contact {
+  height: 100%;
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+}
+footer .contact div {
+  border-left: 1px solid rgba(179, 179, 179, 0.5490196078);
+  border-top: 1px solid rgba(179, 179, 179, 0.5490196078);
+  padding: 30px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin: 0 auto;
+}
+footer .contact h4 {
+  text-transform: uppercase;
+  font-family: "font-1";
+  font-size: 1.2rem;
+  color: hsl(0deg, 0%, 37%);
+}
+footer .contact p {
+  font-family: "font-2";
+  color: #9b9b9b;
+}
+footer .contact .social-i {
+  border: 0px solid;
+}
+footer .contact .social i {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  font-size: 1.5rem;
+  border: 1px solid grey;
+  border-radius: 30px;
+  padding: 15px 15px;
+}
+footer .contact .social i:nth-child(2) {
+  padding: 15px 20px;
+}/*# sourceMappingURL=index.css.map */

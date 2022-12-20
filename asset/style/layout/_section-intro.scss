@@ -1,0 +1,125 @@
+.intro {
+  background: #eeebeb;
+  text-align: center;
+  margin: 0 auto;
+  width: 80%;
+
+  .intro-head {
+    padding: 10px;
+    .date {
+      position: relative;
+      padding: 40px;
+      &::before {
+        content: "";
+        position: absolute;
+        background: #b4b4b496;
+        height: 1px;
+        width: 30%;
+        top: 50%;
+        left: 10px;
+      }
+      &::after {
+        content: "";
+        position: absolute;
+        background: #b4b4b496;
+        height: 1px;
+        width: 30%;
+        top: 50%;
+        right: 10px;
+      }
+    }
+    h2 {
+      font: 3rem "font-1";
+      text-transform: uppercase;
+      width: 60%;
+      margin: 15px auto;
+    }
+
+    .intro-img {
+      height: 450px;
+      width: 100%;
+      margin: 50px 0;
+      @media screen and (max-width: 1000px) {
+        .intro .intro-head .intro-img img {
+          height: 50%;
+        }
+        img {
+          width: 50%;
+          height: 50px;
+        }
+      }
+    }
+    .intro-img img {
+      height: 100%;
+    }
+    button {
+      margin-bottom: 75px;
+    }
+
+    @media screen and (max-width: 1000px) {
+      .date {
+        position: relative;
+        &::before {
+          position: absolute;
+          content: "";
+          background: #b4b4b496;
+          width: 30%;
+          height: 1px;
+          top: 50%;
+          left: -15px;
+        }
+        &::after {
+          position: absolute;
+          content: "";
+          background: #b4b4b496;
+          width: 30%;
+          height: 1px;
+          top: 50%;
+          right: -15px;
+        }
+      }
+    }
+  }
+}
+.intro-body {
+  @media screen and (min-width: 700px) {
+    .intro-body {
+      display: block;
+    }
+    display: flex;
+    .intro-body-left,
+    .intro-body-right {
+      padding: 50px;
+      border: 1px solid rgba(128, 128, 128, 0.171);
+      height: 225px;
+      width: 50%;
+      p {
+        text-align: left;
+        width: 100%;
+        font-size: 0.8rem;
+        margin: 25px 0;
+      }
+      .date {
+        text-align: center;
+      }
+    }
+    .intro-body-left,
+    .intro-body-right {
+      height: 750px;
+    }
+    .intro-body-left img,
+    .intro-body-right img {
+      // height: 0%;
+      width: 99%;
+
+      @media screen and (max-width: 700px) {
+        display: block;
+        .introp-body-left img,
+        .introp-body-right img {
+          height: 150px;
+          width: auto;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,30 @@
+header {
+  justify-content: center;
+  text-align: center;
+  margin: 0 auto;
+  color: white;
+  padding: 100px;
+
+  h1 {
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    font: 700 3rem "font-1", sans-serif;
+    text-transform: uppercase;
+    margin: 30px auto;
+  }
+  p {
+    margin: 30px aoto;
+  }
+  i {
+    border: 1px solid white;
+    border-radius: 45px;
+    padding: 15px 17px;
+  }
+
+  @media screen and (max-width: 1000px) {
+    header {
+      width: 90%;
+    }
+  }
+}
